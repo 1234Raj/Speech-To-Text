@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    background: rgb(213, 208, 208);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.heading h1{
+    text-align: center;
+    margin-top: 15px;
+    fill-opacity: initial;
+}
+.heading #btn{
+    background: rgb(239, 235, 236);
+    padding: 5px 10px;
+    border-radius: 30px;
+    border-color: #fff;
+}
+.heading #btn1{
+    background: rgb(68, 66, 66);
+    padding: 5px 10px;
+    border-radius: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+.heading #btn2{
+    background: rgb(203, 213, 249);
+    padding: 5px 10px;
+    border-radius: 30px;
+    border-color: #fff;
+    color: rgb(185, 67, 67);
+}
+.heading #btn:hover{
+    background-color: #fff;
+}
+.heading #btn1:hover{
+    background-color: transparent;
+    color: black;
+}
+.heading #btn2:hover{
+    background: crimson;
+    color: #fff;
+}
+.heading .container{
+   
+    width: 800px;
+    height: 500px;
+   margin-top: 30px;
+    background: rgb(208, 202, 202);
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+.heading .container #Speech{
+    width: 800px;
+    height: 500px;
+    padding: 10px 0 0 10px ;
+    border-style: none;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+}
+

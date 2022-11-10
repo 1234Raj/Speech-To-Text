@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <title>Speech into text</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Speech To Text</h1>
+        <button id="btn"  >Start</button>
+        <button id="btn1" onclick="window.print()">Print</button>
+        <!-- <button id="btn2" onclick="pause()">pause</button> -->
+        <p id="addevent"></p>
+        <div class="container">
+             <textarea name="text" placeholder="  Your Speech here" id="Speech" cols="30" rows="10"></textarea>
+        </div>
+        
+    </div>
+
+<script>
+function Speechtotext(){
+    var recognition = new webkitSpeechRecognition();
+    recognition.lang="en-GB";
+    recognition.onresult = function(event){
+        document.getElementById("Speech").value = event.results[0][0].transcript;
+    }
+     addevent.text = 'Voice is on';
+    recognition.start();
+}
+
+
+ function pause()
+ {
+    recognition.abort();
+ }
+
+ btn.addEventListener('click',Speechtotext);
+</script>
+ 
+
+
+
+</body>
+
+</html>
